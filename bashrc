@@ -1,5 +1,3 @@
-# See following for more information: http://www.infinitered.com/blog/?p=19
-
 # Colors ----------------------------------------------------------
 export TERM=xterm-color
 
@@ -123,9 +121,7 @@ alias  df='df -h'
 #  zip -r filename.zip directory   #zips entire directory
 
 # List 
-alias ll='exa -lah'
-alias la='ls -Gla'        #list all files including dot files
-alias lla='ls -lah'     # l: list style, a:include hidden, h: human filesize
+alias ll='ls -lah'
 alias lsd='ls -l | grep "^d"'
 # history
 # clear
@@ -149,19 +145,6 @@ alias acs='apt-cache search'
 alias agup='apt-get upgrade'
 alias agud='apt-get update'
 
-# Karma specific dev aliases
-alias    mvp="cd ~/dev/sinatra/karmacloud-mvp/"
-alias kc_rails="cd ~/dev/rails/r313/kc-devise313/"
-alias sample="cd ~/dev/rails/hartl/sample_app/"
-alias   fmbo="cd ~/dev/mechanize/fix-mbo/"
-alias     kk="cd ~/dev/karmakalendar/"
-alias     kc="cd ~/dev/kc_launch/"
-alias   pomo="cd ~/dev/sinatra/pomo/"
-alias  intra="cd ~/Dropbox/KarmaCloud/intranet_gs/"
-alias resume="cd ~/Dropbox/KarmaCloud/resume_gs/"
-alias  ebash="mate ~/.bashrc"
-
-
 # Git
 alias  gs="git status"
 alias  gd="git diff | mate"
@@ -173,31 +156,6 @@ alias gcb="git checkout -b "
 alias  gc="git commit -m "
 alias gco="git checkout"
 alias undopush="git push -f origin HEAD^:master"
-
-# Heroku
-alias ghh='git push heroku master'
-alias  ho='heroku open'
-
-# Rake
-alias rdc="rake db:create"
-alias rdm="bundle exec rake db:migrate"
-alias rdd="rake db:drop"
-alias rdtp="bundle exec rake db:test:prepare"
-
-# Rails
-alias  be="bundle exec"
-alias  ss="ruby script/server -u"
-alias  rs="rails server"
-alias  sc="ruby script/console"
-alias scs="ruby script/console --sandbox"
-alias  rc="rails console"
-alias rcs="rails console --sandbox"
-alias  sd="ruby script/dbconsole"
-
-alias systail='tail -f /var/log/system.log'
-
-# Rspec
-alias  rss="bundle exec rspec spec"
 
 # IP Addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
