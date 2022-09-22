@@ -142,8 +142,8 @@ alias   q='exit'    # quit terminal window
 
 # Apt
 alias acs='apt-cache search'
-alias agup='apt-get upgrade'
-alias agud='apt-get update'
+alias ug=' upgrade'
+alias ud='apt-get update'
 
 # Git
 alias  gs="git status"
